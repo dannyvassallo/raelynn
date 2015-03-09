@@ -1,6 +1,11 @@
+html{
+    min-height:100%;/* make sure it is at least as tall as the viewport */
+    position:relative
+}
 body{
   background-image: url(https://s3.amazonaws.com/myfangate.com/raelynn/wood.jpg);
   background-repeat: repeat;
+  height: 100%
 }
 #page-wrap{
   max-width: 810px;
@@ -38,4 +43,26 @@ body{
 
 a{
   color: #44deec;
+}
+
+.gate{
+  background-color: black;
+  z-index: 9999;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow: hidden;
+  text-align: center;
+  img{
+    padding-top: 20%;
+    padding-bottom: 20px;
+    width: 100%;
+    max-width: 320px;
+  }
+  form{
+    max-width: 320px;
+    margin: 0 auto;
+  }
 }
