@@ -7,7 +7,7 @@ function validateAge() {
         alert('Sorry, you must enter a number.');
     }
     else{
-        $('.gate').css({'display':'none'});
-
+        $('.gate').hide('slow');
+        return false
     }
 }
