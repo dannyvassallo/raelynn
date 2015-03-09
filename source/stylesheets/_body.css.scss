@@ -47,7 +47,7 @@ a{
 
 .gate{
   background-color: black;
-  z-index: 9999;
+  z-index: 2;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -72,4 +72,7 @@ a{
       -webkit-min-logical-width: 80%;
     }
   }
+}
+article{
+  z-index: 9999;
 }

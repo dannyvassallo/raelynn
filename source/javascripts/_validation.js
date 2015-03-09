@@ -10,25 +10,25 @@ function validateForm() {
 
 //First Name
     if (frstNm == null || frstNm == "") {
-        alert("First name must be filled out!");
+        alertify.error("First name must be filled out!");
         $('#entry_2080480129').addClass('error');
         return false;
     }
 //Last Name
     else if (lstNm == null || lstNm == "") {
-        alert("Last name must be filled out!");
+        alertify.error("Last name must be filled out!");
         $('#entry_471668626').addClass('error');
         return false;
     }
 //Email
     else if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=eMail.length) {
-        alert("Please enter a valid email address.");
+        alertify.error("Please enter a valid email address.");
         $('#entry_193196971').addClass('error');
         return false;
     }
 //Bday
     else if ( bDay.length == 0) {
-        alert("Please enter a valid date of birth.");
+        alertify.error("Please enter a valid date of birth.");
         $('#entry_1845520799').addClass('error');
         return false;
     }
@@ -59,7 +59,7 @@ $(function(){
 
 function nospaces(t){
     if(t.value.match(/\s/g)){
-    alert('Sorry, no spaces allowed!');
+    alertify.error('Sorry, no spaces allowed!');
     t.value=t.value.replace(/\s/g,'');
     }
 }
