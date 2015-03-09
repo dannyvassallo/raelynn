@@ -1,5 +1,8 @@
 function validateAge() {
-    var age = document.forms["age-gate"]["age"].value;
+    var Bdate = document.forms["age-gate"]["age"].value;
+    var Bday = +new Date(Bdate);
+
+    var age = (Date.now() - Bday) / (31557600000);
     if ( age < 13 ) {
         alert('Sorry, you must be older to enter this sweepstakes.');
         return false
@@ -13,3 +16,5 @@ function validateAge() {
         return false
     }
 }
+
+
